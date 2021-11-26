@@ -75,6 +75,7 @@ i{
     position: relative;
     flex-basis: 250px;
     height: 200px;
+    margin: 15px 15px;
 }
 
 .audio-name{

@@ -40,6 +40,7 @@ a{
     text-decoration: none;
     color: white;
     padding: 10px;
+    display: flex;
 }
 
 i{
@@ -110,16 +111,24 @@ footer{
 .nav-section{
     flex-wrap: wrap;
     display: flex;
-    flex-basis: calc(100vw / 3);
+    flex-basis: calc(50vw / 3);
     height: 100%;
     justify-content: flex-start;
     align-items: center;
     margin: 10px;
-    font-size: 1.5em;
+    font-size: 1.8em;
+}
+
+.nav-section a{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .center-item{
     flex-grow: 1;
+    align-items: center;
+    justify-content: center;
 }
 
 .right-item{
@@ -127,7 +136,8 @@ footer{
 }
 
 .small{
-    font-size: 0.5em ;
+    font-size: 0.5em;
+    margin-top: 5px;
 }
 
 .red-text{

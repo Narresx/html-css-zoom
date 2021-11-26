@@ -142,8 +142,13 @@ footer{
 
 .red-text{
     color: red;
-    background-color: rgb(74,74,74);
+    /* padding: 44px 44px; */
     text-align: right;
+    margin-right: 0;
+}
+
+.bkg-color-gray{
+    background-color: rgb(74,74,74);
 }
 
 .navbar a:hover{

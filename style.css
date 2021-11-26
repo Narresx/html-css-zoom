@@ -17,6 +17,10 @@ body{
     background-color: black;
 }
 
+body::-webkit-scrollbar{
+    display: none;
+}
+
 /* Top-bar */
 
 header{
@@ -52,8 +56,17 @@ i{
 
 /* Main content */
 
+.overflow-scroll{
+    overflow: scroll;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-self: flex-end;
+}
+
 .main-content{
     display: flex;
+    flex-basis: 100vw;
     flex-wrap: wrap;
     margin-top: 150px;
 }

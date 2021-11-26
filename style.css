@@ -22,6 +22,10 @@ body{
     align-items: center;
 }
 
+a{
+    text-decoration: none;
+    color: white;
+}
 .button{
     display: inline;
     background: rgb(74,74,74);

@@ -17,9 +17,15 @@ body{
     width: 100%;
     background-color: black;
     position: fixed;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 .button{
+    display: inline;
     background: rgb(74,74,74);
-    padding: 5px;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
 }

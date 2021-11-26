@@ -107,6 +107,7 @@ footer{
 }
 
 .nav-section{
+    flex-wrap: wrap;
     display: flex;
     flex-basis: calc(100vw / 3);
     height: 100%;

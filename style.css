@@ -11,9 +11,10 @@
     content: '';
     clear: both;
 }
+
 body{
     color: white;
-    position: relative;
+    background-color: black;
 }
 
 /* Top-bar */
@@ -23,15 +24,24 @@ header{
     width: 100%;
     background-color: black;
     position: fixed;
+    top: 0;
+    left: 0;
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    z-index: 1;
 }
 
 a{
     text-decoration: none;
     color: white;
+    padding: 10px;
 }
+
+i{
+    display: inline;
+}
+
 .button{
     display: inline;
     background: rgb(74,74,74);
@@ -45,16 +55,63 @@ a{
 .main-content{
     display: flex;
     flex-wrap: wrap;
+    margin-top: 150px;
 }
 
 .img-square{
     position: relative;
-    flex-basis: calc(100vw / 7);
-    height: calc(100vw / 7);
+    flex-basis: 250px;
+    height: 200px;
 }
 
 .audio-name{
     position: absolute;
-    right: 50%;
-    top: 50%;
+    left: 0;
+    bottom: 0;
+    font-size: 1em;
+    border-radius: 0;
+}
+
+/* Footer */
+
+footer{
+    height: 100px;
+    width: 100%;
+    background-color: rgb(34,34,34);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+
+.navbar{
+    display: flex;
+    justify-content: center;
+}
+
+.nav-section{
+    display: flex;
+    flex-basis: calc(80vw / 3);
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    font-size: 1.5em;
+}
+
+.center-item{
+    flex-grow: 1;
+}
+
+.small{
+    font-size: 0.5em ;
+}
+
+.red-text{
+    color: red;
+    background-color: rgb(74,74,74);
+
 }

@@ -152,15 +152,24 @@ footer{
 }
 
 .navbar a:hover{
-    animation: turn-green 2s linear;
+    animation: turn-green 3s linear infinite;
 }
 
 @keyframes turn-green{
-    from {
+    0% {
         color: currentColor;
     }
 
-    to {
+    30% {
         color: green;
     }
+
+    60% {
+        color: green;
+    }
+
+    100% {
+        color: white;
+    }
 }
+

@@ -6,13 +6,19 @@
     font-family: 'Lato', sans-serif;
 }
 
+.clearfix::after{
+    display: table;
+    content: '';
+    clear: both;
+}
 body{
     color: white;
+    position: relative;
 }
 
 /* Top-bar */
 
-.topbar{
+header{
     height: 100px;
     width: 100%;
     background-color: black;
@@ -36,3 +42,19 @@ a{
 
 /* Main content */
 
+.main-content{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.img-square{
+    position: relative;
+    flex-basis: calc(100vw / 7);
+    height: calc(100vw / 7);
+}
+
+.audio-name{
+    position: absolute;
+    right: 50%;
+    top: 50%;
+}

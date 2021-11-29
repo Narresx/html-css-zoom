@@ -58,7 +58,6 @@ i{
 /* Main content */
 
 .overflow-scroll{
-    overflow: scroll;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -68,6 +67,8 @@ i{
 .main-content{
     display: flex;
     flex-basis: 100vw;
+    height: calc(100vh - 200px);
+    overflow-y: auto;
     flex-wrap: wrap;
     margin-top: 150px;
 }
@@ -133,6 +134,8 @@ footer{
 
 .right-item{
     justify-content: flex-end;
+    /* height: 100px; */
+    align-self: stretch;
 }
 
 .small{
@@ -145,6 +148,8 @@ footer{
     /* padding: 44px 44px; */
     text-align: right;
     margin-right: 0;
+    align-self: stretch;
+    height: 100%;
 }
 
 .bkg-color-gray{

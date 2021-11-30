@@ -57,9 +57,8 @@ i{
 
 /* Main content */
 
-.overflow-scroll{
-    overflow-x: hidden;
-    overflow: scroll;
+.scroll-content{
+    overflow: auto;
     max-height: calc(100vh - 200px);
     display: flex;
     flex-wrap: wrap;
@@ -73,7 +72,6 @@ i{
     display: flex;
     flex-basis: 100vw;
     max-height: calc(100vh - 200px);
-    overflow-y: none;
     flex-wrap: wrap;
     margin-top: 150px;
 }

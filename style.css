@@ -58,6 +58,9 @@ i{
 /* Main content */
 
 .overflow-scroll{
+    overflow-x: hidden;
+    overflow: scroll;
+    max-height: calc(100vh - 200px);
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -65,10 +68,12 @@ i{
 }
 
 .main-content{
+    margin-bottom: 100px;
+    position: relative;
     display: flex;
     flex-basis: 100vw;
-    height: calc(100vh - 200px);
-    overflow-y: auto;
+    max-height: calc(100vh - 200px);
+    overflow-y: none;
     flex-wrap: wrap;
     margin-top: 150px;
 }
